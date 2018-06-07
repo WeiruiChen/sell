@@ -1,0 +1,849 @@
+2018-04-03 10:29:27.167 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 10192 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 10:29:27.432 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 10:29:27.542 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@422c3c7a: startup date [Tue Apr 03 10:29:27 CST 2018]; root of context hierarchy
+2018-04-03 10:29:35.171 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 10:29:35.340 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 10:29:35.821 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 10:29:35.978 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 10:29:35.981 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 10:29:35.984 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 10:29:35.985 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 10:29:35.986 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 10:29:35.988 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 10:29:37.260 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 10:29:37.614 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25f52303] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 10:29:38.681 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 10:29:38.709 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 10:29:38.741 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 10:29:38.742 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 10:29:38.764 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 10:29:39.470 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 10:29:39.472 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11931 ms
+2018-04-03 10:29:39.833 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 10:29:39.842 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 10:29:39.842 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 10:29:39.843 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 10:29:39.843 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 10:29:40.407 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 10:29:40.826 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 10:29:41.062 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 10:29:41.102 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 10:29:41.285 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 10:29:41.290 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 10:29:41.398 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 10:29:41.772 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 10:29:43.133 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 10:29:46.948 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@422c3c7a: startup date [Tue Apr 03 10:29:27 CST 2018]; root of context hierarchy
+2018-04-03 10:29:47.031 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 10:29:47.099 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.100 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.101 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.102 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.105 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 10:29:47.105 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.106 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.108 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 10:29:47.108 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-04-03 10:29:47.109 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 10:29:47.109 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 10:29:47.110 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-04-03 10:29:47.112 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 10:29:47.112 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.114 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.115 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.116 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.123 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.124 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.124 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.124 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.125 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.126 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.127 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.127 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.127 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.128 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.131 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 10:29:47.131 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 10:29:47.132 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.133 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.133 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 10:29:47.136 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 10:29:47.136 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 10:29:47.137 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 10:29:47.137 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 10:29:47.137 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 10:29:47.143 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 10:29:47.144 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 10:29:47.406 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 10:29:47.406 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 10:29:47.477 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 10:29:47.544 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 10:29:49.231 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 10:29:49.749 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 10:29:49.763 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 10:29:49.765 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 10:29:49.777 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 10:29:49.860 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 10:29:49.892 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 10:29:49.929 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 10:29:49.935 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 27.512 seconds (JVM running for 40.021)
+2018-04-03 10:32:34.374 [http-nio-8080-exec-3]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 10:32:34.375 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 10:32:34.416 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-04-03 10:32:34.496 [http-nio-8080-exec-3]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fyuhao.natapp1.cc%2F%23%2F#wechat_redirect
+2018-04-03 10:34:07.630 [http-nio-8080-exec-6]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fyuhao.natapp1.cc%2F%23%2F#wechat_redirect
+2018-04-03 16:23:10.043 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 5160 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 16:23:10.125 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 16:23:10.938 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79da1ec0: startup date [Tue Apr 03 16:23:10 CST 2018]; root of context hierarchy
+2018-04-03 16:23:14.097 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 16:23:14.218 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 16:23:14.536 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 16:23:14.598 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 16:23:14.610 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 16:23:14.610 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 16:23:14.610 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 16:23:14.614 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 16:23:14.614 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 16:23:15.427 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 16:23:15.837 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7c849dcb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 16:23:16.959 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 16:23:17.018 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 16:23:17.061 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 16:23:17.061 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 16:23:17.076 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 16:23:17.647 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 16:23:17.651 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6713 ms
+2018-04-03 16:23:17.951 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 16:23:17.959 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 16:23:17.963 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 16:23:17.963 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 16:23:17.963 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 16:23:18.690 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 16:23:20.003 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 16:23:20.358 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 16:23:20.394 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 16:23:21.258 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 16:23:21.261 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 16:23:21.552 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 16:23:22.032 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 16:23:23.557 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 16:23:30.670 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79da1ec0: startup date [Tue Apr 03 16:23:10 CST 2018]; root of context hierarchy
+2018-04-03 16:23:30.751 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 16:23:30.823 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.824 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.825 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.825 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.828 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.828 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 16:23:30.829 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.831 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 16:23:30.832 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 16:23:30.833 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 16:23:30.833 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 16:23:30.836 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 16:23:30.838 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 16:23:30.838 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.840 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.841 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.841 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.849 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.849 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.850 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.850 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.850 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.852 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.853 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.853 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.854 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.855 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.858 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 16:23:30.858 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.859 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 16:23:30.859 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.860 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:23:30.863 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 16:23:30.863 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 16:23:30.864 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 16:23:30.864 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 16:23:30.865 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 16:23:30.870 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 16:23:30.871 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 16:23:31.143 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:23:31.143 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:23:31.186 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 16:23:31.246 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:23:33.048 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 16:23:33.642 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 16:23:33.665 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 16:23:33.667 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 16:23:33.678 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 16:23:33.702 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 16:23:33.722 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 16:23:33.764 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 16:23:33.771 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 27.72 seconds (JVM running for 35.522)
+2018-04-03 16:25:02.013 [http-nio-8080-exec-3]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 16:25:02.014 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 16:25:02.048 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-04-03 16:25:02.194 [http-nio-8080-exec-3]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsuishouss.com%2F%23%2F#wechat_redirect
+2018-04-03 16:25:02.337 [http-nio-8080-exec-1]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-03 16:28:31.078 [http-nio-8080-exec-5]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 16:28:41.702 [http-nio-8080-exec-9]    INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-04-03 16:28:41.704 [http-nio-8080-exec-9]    INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-04-03 16:28:44.038 [http-nio-8080-exec-5]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 16:28:54.233 [http-nio-8080-exec-9]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 16:29:54.822 [http-nio-8080-exec-8]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payRequest={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522744193996551049",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "olgUa07TgzfQs_wK6etGjjtAHGTk"
+}
+2018-04-03 16:29:56.081 [http-nio-8080-exec-8]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payResponse={
+  "appId": "wx04217e27ba2ec8bc",
+  "timeStamp": "1522744196",
+  "nonceStr": "Aj4VegfZiqSvgZgO",
+  "packAge": "prepay_id\u003dwx20180403162956fd3884eded0705547841",
+  "signType": "MD5",
+  "paySign": "AF9C31C92D945F74DDA1A6229E95D9C4"
+}
+2018-04-03 16:30:05.649 [http-nio-8080-exec-10]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信支付异步通知 payResponse={
+  "orderAmount": 0.01,
+  "orderId": "1522744193996551049",
+  "outTradeNo": "4200000064201804031437569149"
+}
+2018-04-03 16:30:23.295 [http-nio-8080-exec-8]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 16:30:31.360 [http-nio-8080-exec-10]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522744193996551049",
+  "orderAmount": 0.01
+}
+2018-04-03 16:30:32.598 [http-nio-8080-exec-10]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】response={
+  "orderId": "1522744193996551049",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000064201804031437569149",
+  "refundId": "1522744193996551049",
+  "outRefundNo": "50000506262018040303993388988"
+}
+2018-04-03 16:30:54.669 [http-nio-8080-exec-2]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payRequest={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522744193996551049",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "olgUa07TgzfQs_wK6etGjjtAHGTk"
+}
+2018-04-03 16:33:09.875 [http-nio-8080-exec-3]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】广播消息, message=1522744389870677097
+2018-04-03 16:33:09.887 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 16:33:10.184 [http-nio-8080-exec-1]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payRequest={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522744389870677097",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "olgUa07TgzfQs_wK6etGjjtAHGTk"
+}
+2018-04-03 16:33:10.539 [http-nio-8080-exec-1]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payResponse={
+  "appId": "wx04217e27ba2ec8bc",
+  "timeStamp": "1522744390",
+  "nonceStr": "giwrdPRllb0sHb8F",
+  "packAge": "prepay_id\u003dwx201804031633119297adaad40774646217",
+  "signType": "MD5",
+  "paySign": "95FA784B067E85B09E6ACA5BF0C4F9E0"
+}
+2018-04-03 16:33:18.825 [http-nio-8080-exec-6]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信支付异步通知 payResponse={
+  "orderAmount": 0.01,
+  "orderId": "1522744389870677097",
+  "outTradeNo": "4200000069201804031367247495"
+}
+2018-04-03 16:33:33.163 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 16:33:42.992 [http-nio-8080-exec-2]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522744389870677097",
+  "orderAmount": 0.01
+}
+2018-04-03 16:33:44.284 [http-nio-8080-exec-2]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】response={
+  "orderId": "1522744389870677097",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000069201804031367247495",
+  "refundId": "1522744389870677097",
+  "outRefundNo": "50000706212018040304036124626"
+}
+2018-04-03 16:33:48.400 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 16:33:49.144 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 16:33:57.680 [http-nio-8080-exec-3]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 16:56:22.700 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 3796 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 16:56:22.731 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 16:56:23.043 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d3ba765: startup date [Tue Apr 03 16:56:23 CST 2018]; root of context hierarchy
+2018-04-03 16:56:25.106 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 16:56:25.293 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 16:56:25.668 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 16:56:25.731 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 16:56:26.387 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 16:56:26.872 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e06f565] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 16:56:27.950 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 16:56:27.981 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 16:56:28.012 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 16:56:28.012 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 16:56:28.028 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 16:56:28.622 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 16:56:28.622 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5579 ms
+2018-04-03 16:56:29.028 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 16:56:29.028 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 16:56:29.028 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 16:56:29.028 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 16:56:29.028 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 16:56:29.309 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 16:56:29.559 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 16:56:29.700 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 16:56:29.747 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 16:56:29.919 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 16:56:29.919 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 16:56:29.981 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 16:56:30.231 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 16:56:31.044 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 16:56:33.919 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d3ba765: startup date [Tue Apr 03 16:56:23 CST 2018]; root of context hierarchy
+2018-04-03 16:56:33.981 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 16:56:34.028 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.028 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.028 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.044 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 16:56:34.059 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 16:56:34.075 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 16:56:34.075 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 16:56:34.075 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 16:56:34.075 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 16:56:34.075 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 16:56:34.263 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:56:34.263 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:56:34.294 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 16:56:34.356 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 16:56:35.822 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 16:56:36.281 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 16:56:36.297 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 16:56:36.298 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 16:56:36.309 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 16:56:36.326 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 16:56:36.347 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 16:56:36.377 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 16:56:36.382 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 14.915 seconds (JVM running for 22.933)
+2018-04-03 16:57:37.389 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 16:57:37.389 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 16:57:37.421 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-04-03 16:57:37.525 [http-nio-8080-exec-2]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-03 17:02:20.896 [http-nio-8080-exec-10]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payRequest={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522746140252454147",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "olgUa07TgzfQs_wK6etGjjtAHGTk"
+}
+2018-04-03 17:02:21.892 [http-nio-8080-exec-10]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payResponse={
+  "appId": "wx04217e27ba2ec8bc",
+  "timeStamp": "1522746141",
+  "nonceStr": "NsA2U9QG0EUafnmW",
+  "packAge": "prepay_id\u003dwx2018040317022263048d20a90074477942",
+  "signType": "MD5",
+  "paySign": "789F822C457689CF466CF4BD78BED3BF"
+}
+2018-04-03 17:02:43.215 [http-nio-8080-exec-4]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payRequest={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522746140252454147",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "olgUa07TgzfQs_wK6etGjjtAHGTk"
+}
+2018-04-03 17:02:44.020 [http-nio-8080-exec-4]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信发起支付 payResponse={
+  "appId": "wx04217e27ba2ec8bc",
+  "timeStamp": "1522746164",
+  "nonceStr": "rOw9RGxr1EMiZuJm",
+  "packAge": "prepay_id\u003dwx20180403170244884d12eb570195043291",
+  "signType": "MD5",
+  "paySign": "7C9FEDE48C18AFAE3DF8B05F72D12F9E"
+}
+2018-04-03 17:02:50.378 [http-nio-8080-exec-5]    INFO  c.y.sell.service.impl.PayServiceImpl - 微信支付异步通知 payResponse={
+  "orderAmount": 0.01,
+  "orderId": "1522746140252454147",
+  "outTradeNo": "4200000055201804031431704720"
+}
+2018-04-03 17:03:09.068 [http-nio-8080-exec-3]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1522746140252454147",
+  "orderAmount": 0.01
+}
+2018-04-03 17:03:10.423 [http-nio-8080-exec-3]    INFO  c.y.sell.service.impl.PayServiceImpl - 【微信退款】response={
+  "orderId": "1522746140252454147",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000055201804031431704720",
+  "refundId": "1522746140252454147",
+  "outRefundNo": "50000006162018040303995040632"
+}
+2018-04-03 22:10:01.479 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 2160 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 22:10:01.497 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 22:10:01.739 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@710b18a6: startup date [Tue Apr 03 22:10:01 CST 2018]; root of context hierarchy
+2018-04-03 22:10:05.255 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 22:10:05.377 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 22:10:05.591 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 22:10:05.681 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 22:10:05.683 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 22:10:05.684 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 22:10:05.685 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 22:10:05.687 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 22:10:05.702 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 22:10:06.359 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 22:10:06.709 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63efedc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 22:10:07.771 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 22:10:07.819 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 22:10:07.850 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 22:10:07.851 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 22:10:07.886 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 22:10:08.551 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 22:10:08.551 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6812 ms
+2018-04-03 22:10:08.820 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 22:10:08.828 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 22:10:08.829 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 22:10:08.830 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 22:10:08.830 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 22:10:09.177 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 22:10:09.543 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 22:10:09.712 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 22:10:09.736 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 22:10:09.860 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 22:10:09.862 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 22:10:09.967 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 22:10:10.316 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 22:10:11.349 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 22:10:16.471 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@710b18a6: startup date [Tue Apr 03 22:10:01 CST 2018]; root of context hierarchy
+2018-04-03 22:10:16.539 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 22:10:16.615 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.616 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.617 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.618 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.621 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.621 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.622 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 22:10:16.624 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 22:10:16.625 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 22:10:16.625 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 22:10:16.625 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 22:10:16.627 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 22:10:16.628 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 22:10:16.629 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.632 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.635 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.636 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.645 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.646 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.647 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.647 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.649 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.652 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.652 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.653 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.653 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.653 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.656 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 22:10:16.657 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.657 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.658 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 22:10:16.658 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 22:10:16.661 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 22:10:16.661 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 22:10:16.662 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 22:10:16.662 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 22:10:16.662 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 22:10:16.667 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 22:10:16.668 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 22:10:16.917 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 22:10:16.917 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 22:10:16.952 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 22:10:17.000 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 22:10:18.468 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 22:10:18.966 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 22:10:18.979 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 22:10:18.981 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 22:10:19.001 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 22:10:19.037 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 22:10:19.056 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 22:10:19.094 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 22:10:19.105 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 19.894 seconds (JVM running for 28.155)
+2018-04-03 22:11:13.419 [http-nio-8080-exec-3]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 22:11:13.420 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 22:11:13.457 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-04-03 22:11:41.376 [http-nio-8080-exec-5]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 22:11:50.032 [http-nio-8080-exec-1]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-03 22:11:50.489 [http-nio-8080-exec-1]    INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-04-03 22:11:50.493 [http-nio-8080-exec-1]    INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-04-03 22:11:52.426 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 22:12:45.527 [http-nio-8080-exec-10]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 22:12:50.012 [http-nio-8080-exec-3]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:2
+2018-04-03 22:13:08.435 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:1
+2018-04-03 22:13:14.843 [http-nio-8080-exec-5]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:2
+2018-04-03 22:13:17.127 [http-nio-8080-exec-9]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:1
+2018-04-03 22:16:52.453 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 22:21:16.867 [http-nio-8080-exec-4]    WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2018-04-03 22:21:16.872 [http-nio-8080-exec-4]    INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2018-04-03 22:21:32.128 [http-nio-8080-exec-8]    WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2018-04-03 22:21:32.129 [http-nio-8080-exec-8]    INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2018-04-03 22:34:00.127 [http-nio-8080-exec-9]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 22:34:09.626 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:2
+2018-04-03 22:35:00.408 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:1
+2018-04-03 22:37:44.161 [http-nio-8080-exec-6]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 22:37:45.227 [http-nio-8080-exec-3]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 22:38:03.527 [http-nio-8080-exec-8]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 22:39:00.132 [http-nio-8080-exec-4]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:01:35.241 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 132 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 23:01:35.247 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 23:01:35.343 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b95e48b: startup date [Tue Apr 03 23:01:35 CST 2018]; root of context hierarchy
+2018-04-03 23:01:36.925 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 23:01:36.995 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:01:37.147 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:01:37.180 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 23:01:37.183 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 23:01:37.190 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 23:01:37.191 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 23:01:37.192 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 23:01:37.193 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 23:01:37.685 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 23:01:37.976 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b133094a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 23:01:38.765 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 23:01:38.787 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:01:38.804 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 23:01:38.805 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 23:01:38.812 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 23:01:39.191 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 23:01:39.191 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3849 ms
+2018-04-03 23:01:39.529 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 23:01:39.537 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 23:01:39.538 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 23:01:39.538 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 23:01:39.538 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 23:01:39.840 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 23:01:40.085 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 23:01:40.173 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:01:40.198 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 23:01:40.395 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 23:01:40.398 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 23:01:40.470 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 23:01:40.734 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 23:01:41.662 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:01:45.061 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b95e48b: startup date [Tue Apr 03 23:01:35 CST 2018]; root of context hierarchy
+2018-04-03 23:01:45.153 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 23:01:45.232 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.234 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.235 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.236 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.239 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 23:01:45.240 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.241 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.244 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 23:01:45.244 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 23:01:45.245 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 23:01:45.246 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 23:01:45.252 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 23:01:45.254 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 23:01:45.255 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.257 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.258 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.259 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.286 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.287 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.288 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.289 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.291 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.295 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.295 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.296 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.296 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.297 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.307 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 23:01:45.307 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 23:01:45.308 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.315 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.316 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:01:45.318 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 23:01:45.319 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 23:01:45.319 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 23:01:45.320 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 23:01:45.321 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 23:01:45.330 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 23:01:45.332 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 23:01:45.485 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:01:45.485 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:01:45.558 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 23:01:45.649 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:01:46.904 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 23:01:47.363 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 23:01:47.377 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 23:01:47.379 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 23:01:47.389 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 23:01:47.407 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:01:47.427 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 23:01:47.461 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 23:01:47.466 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 14.751 seconds (JVM running for 17.217)
+2018-04-03 23:02:13.093 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 23:02:13.093 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 23:02:13.131 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-04-03 23:02:13.331 [http-nio-8080-exec-1]    INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-04-03 23:02:13.334 [http-nio-8080-exec-1]    INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-04-03 23:02:13.982 [http-nio-8080-exec-1]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-03 23:02:50.653 [http-nio-8080-exec-4]    WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2018-04-03 23:02:50.659 [http-nio-8080-exec-4]    INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2018-04-03 23:07:09.480 [http-nio-8080-exec-4]    WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2018-04-03 23:07:09.480 [http-nio-8080-exec-4]    INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2018-04-03 23:40:20.990 [http-nio-8080-exec-4]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 23:40:24.662 [http-nio-8080-exec-10]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:40:37.318 [http-nio-8080-exec-1]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:40:37.934 [http-nio-8080-exec-4]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:40:52.153 [http-nio-8080-exec-9]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:40:57.063 [http-nio-8080-exec-1]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:43:19.176 [http-nio-8080-exec-10]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:43:22.611 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:43:43.734 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:43:46.239 [http-nio-8080-exec-3]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:43:54.704 [http-nio-8080-exec-7]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:43:59.809 [http-nio-8080-exec-8]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:44:15.104 [http-nio-8080-exec-2]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:49:44.473 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 8284 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 23:49:44.480 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 23:49:44.575 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c098bb3: startup date [Tue Apr 03 23:49:44 CST 2018]; root of context hierarchy
+2018-04-03 23:49:46.434 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 23:49:46.520 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:49:46.699 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:49:46.743 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 23:49:46.746 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 23:49:46.748 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 23:49:46.749 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 23:49:46.749 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 23:49:46.750 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 23:49:47.323 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 23:49:47.671 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d4f7c20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 23:49:48.642 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 23:49:48.668 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:49:48.689 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 23:49:48.689 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 23:49:48.698 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 23:49:49.140 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 23:49:49.140 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4565 ms
+2018-04-03 23:49:49.502 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 23:49:49.512 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 23:49:49.513 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 23:49:49.513 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 23:49:49.513 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 23:49:49.863 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 23:49:50.200 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 23:49:50.347 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:49:50.387 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 23:49:50.541 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 23:49:50.545 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 23:49:50.634 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 23:49:50.961 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 23:49:52.056 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:49:56.138 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c098bb3: startup date [Tue Apr 03 23:49:44 CST 2018]; root of context hierarchy
+2018-04-03 23:49:56.232 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 23:49:56.318 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.320 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.321 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.322 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.325 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.326 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 23:49:56.327 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.329 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 23:49:56.330 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 23:49:56.331 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 23:49:56.331 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 23:49:56.333 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 23:49:56.334 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 23:49:56.335 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.338 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.339 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.340 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.351 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.352 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.354 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.355 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.356 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.359 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.360 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.362 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+2018-04-03 23:49:56.362 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.363 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.366 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 23:49:56.366 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.371 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 23:49:56.372 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.373 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:49:56.375 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 23:49:56.375 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 23:49:56.376 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 23:49:56.376 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 23:49:56.377 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 23:49:56.389 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 23:49:56.390 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 23:49:56.542 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:49:56.542 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:49:56.648 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 23:49:56.726 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:49:58.223 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 23:49:58.914 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 23:49:58.931 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 23:49:58.933 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 23:49:58.956 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 23:49:58.985 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:49:59.014 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 23:49:59.057 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 23:49:59.062 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 17.45 seconds (JVM running for 20.67)
+2018-04-03 23:50:35.475 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 23:50:35.476 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 23:50:35.509 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-04-03 23:50:35.723 [http-nio-8080-exec-1]    INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-04-03 23:50:35.727 [http-nio-8080-exec-1]    INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-04-03 23:50:36.376 [http-nio-8080-exec-1]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-03 23:50:57.692 [http-nio-8080-exec-9]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 23:51:01.426 [http-nio-8080-exec-10]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】有新的连接, 总数:1
+2018-04-03 23:51:15.176 [http-nio-8080-exec-1]    INFO  com.yuhao.sell.service.WebSocket - 【websocket消息】连接断开, 总数:0
+2018-04-03 23:56:12.990 [HikariPool-1 housekeeper]    WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s260ms92µs4ns).
+2018-04-03 23:56:13.003 [http-nio-8080-exec-7]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 23:56:13.068 [http-nio-8080-exec-8]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 23:57:29.528 [HikariPool-1 housekeeper]    WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s537ms877µs266ns).
+2018-04-03 23:57:29.540 [http-nio-8080-exec-10]    WARN  c.y.s.aspect.SellerAuthorizeAspect - 【登录校验】Cookie中查不到token
+2018-04-03 23:59:23.322 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 5944 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-04-03 23:59:23.328 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-04-03 23:59:23.603 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56276db8: startup date [Tue Apr 03 23:59:23 CST 2018]; root of context hierarchy
+2018-04-03 23:59:25.064 [main]    WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuhao.sell]' package. Please check your configuration.
+2018-04-03 23:59:25.141 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:59:25.293 [main]    INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-03 23:59:25.327 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.AdminDAO.
+2018-04-03 23:59:25.329 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderDetailDAO.
+2018-04-03 23:59:25.330 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.OrderMasterDAO.
+2018-04-03 23:59:25.331 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductCategoryDAO.
+2018-04-03 23:59:25.332 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.ProductInfoDAO.
+2018-04-03 23:59:25.333 [main]    INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.yuhao.sell.dao.SellerInfoDAO.
+2018-04-03 23:59:25.950 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-03 23:59:26.310 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bb3f7cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-03 23:59:27.396 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-04-03 23:59:27.421 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:59:27.443 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-03 23:59:27.443 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-03 23:59:27.452 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;C:\Program Files\nodejs\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;C:\Users\yuhao\AppData\Roaming\npm;.]
+2018-04-03 23:59:27.941 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-04-03 23:59:27.947 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4344 ms
+2018-04-03 23:59:28.305 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-04-03 23:59:28.313 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-03 23:59:28.314 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-03 23:59:28.314 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-03 23:59:28.314 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-03 23:59:28.592 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-04-03 23:59:28.824 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-04-03 23:59:28.953 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:59:29.013 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-03 23:59:29.161 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-03 23:59:29.163 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-04-03 23:59:29.234 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-03 23:59:29.498 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-03 23:59:30.372 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-03 23:59:33.488 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56276db8: startup date [Tue Apr 03 23:59:23 CST 2018]; root of context hierarchy
+2018-04-03 23:59:33.565 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-03 23:59:33.656 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.666 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.668 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineNot],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineNot(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.668 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/examineOk],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.AdminController.examineOk(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.673 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/onAdminLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.onLogin()
+2018-04-03 23:59:33.674 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.676 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/AdminLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.BaseController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.681 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-04-03 23:59:33.682 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-04-03 23:59:33.683 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-04-03 23:59:33.684 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-04-03 23:59:33.686 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list(java.lang.String)
+2018-04-03 23:59:33.687 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-04-03 23:59:33.688 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.692 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.694 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.696 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerCategoryController.save(com.yuhao.sell.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.717 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.718 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.719 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.720 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.720 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/order/sellerDetail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerOrderController.sellerDetail(java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.722 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.723 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.724 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.save(com.yuhao.sell.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+2018-04-03 23:59:33.725 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.727 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.733 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/banner],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.banner()
+2018-04-03 23:59:33.734 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/onSellerLogin],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.onLogin()
+2018-04-03 23:59:33.734 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.735 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/sellerLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.adminLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.736 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2018-04-03 23:59:33.738 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-04-03 23:59:33.738 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-04-03 23:59:33.739 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrAuthorize(java.lang.String)
+2018-04-03 23:59:33.740 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2018-04-03 23:59:33.742 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-04-03 23:59:33.750 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-03 23:59:33.752 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-03 23:59:33.911 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:59:33.911 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:59:33.962 [main]    INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in sellExceptionHandler
+2018-04-03 23:59:34.038 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-03 23:59:35.330 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-03 23:59:35.780 [main]    INFO  o.s.w.s.s.s.ServerEndpointExporter - Registering @ServerEndpoint class: class com.yuhao.sell.service.WebSocket
+2018-04-03 23:59:35.793 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-04-03 23:59:35.795 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-03 23:59:35.807 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-03 23:59:35.825 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-03 23:59:35.847 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-03 23:59:35.877 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-04-03 23:59:35.882 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 14.927 seconds (JVM running for 17.743)
+2018-04-03 23:59:57.811 [http-nio-8080-exec-3]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-03 23:59:57.812 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-03 23:59:57.876 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2018-04-03 23:59:58.239 [http-nio-8080-exec-3]    INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-04-03 23:59:58.244 [http-nio-8080-exec-3]    INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-04-03 23:59:59.176 [http-nio-8080-exec-3]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory

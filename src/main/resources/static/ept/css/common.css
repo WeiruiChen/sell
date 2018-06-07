@@ -1,0 +1,96 @@
+@charset "utf-8";
+input:focus,
+textarea:focus {
+	outline: 0
+}
+
+html {
+	font-size: 62.5%;
+	width: 100%
+}
+
+body {
+	font-size: 12px;
+	color: #999;
+	font-family: "Microsoft yahei", "微软雅黑", Helvetica, sans-serif, Arial
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+	-webkit-transition: All .2s ease-in-out;
+	-moz-transition: All .2s ease-in-out;
+	-o-transition: All .2s ease-in-out;
+	transition: All .2s ease-in-out
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+:-moz-placeholder {
+	color: #aeaeae
+}
+
+::-moz-placeholder {
+	color: #aeaeae
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #aeaeae
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #aeaeae
+}
+
+-webkit-text-size-adjust: none;
+select:focus {
+	outline: 0
+}
+
+img {
+	border: 0
+}
+
+li,
+ul {
+	list-style: none
+}
+
+.clear {
+	clear: both
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table
+}
+
+em {
+	font-style: normal
+}
+
+table {
+	border-collapse: collapse
+}
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.hide {
+	display: none
+}

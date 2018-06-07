@@ -1,0 +1,723 @@
+2018-03-29 09:28:01.485 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 7276 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 09:28:01.535 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 09:28:02.373 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37ceb1df: startup date [Thu Mar 29 09:28:02 CST 2018]; root of context hierarchy
+2018-03-29 09:28:07.664 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e3acd0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 09:28:08.594 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 09:28:08.656 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 09:28:08.708 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 09:28:08.709 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 09:28:08.735 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 09:28:09.095 [localhost-startStop-1]    INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-03-29 09:28:09.095 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6722 ms
+2018-03-29 09:28:09.273 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 09:28:09.286 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 09:28:09.287 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 09:28:09.287 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 09:28:09.287 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 09:28:09.789 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 09:28:10.188 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 09:28:10.320 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 09:28:10.382 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 09:28:10.864 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 09:28:10.866 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 09:28:11.018 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 09:28:11.357 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 09:28:12.403 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 09:28:13.868 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37ceb1df: startup date [Thu Mar 29 09:28:02 CST 2018]; root of context hierarchy
+2018-03-29 09:28:13.907 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 09:28:13.983 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 09:28:13.985 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 09:28:13.985 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 09:28:13.985 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 09:28:13.986 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 09:28:13.991 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 09:28:13.992 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 09:28:14.033 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 09:28:14.034 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 09:28:14.215 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 09:28:14.712 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 09:28:14.714 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 09:28:14.739 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 09:28:14.761 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 09:28:14.773 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 09:28:14.803 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-03-29 09:28:14.805 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 17.977 seconds (JVM running for 25.448)
+2018-03-29 09:28:27.425 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 09:28:27.426 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 09:28:27.448 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-03-29 09:28:36.554 [http-nio-8080-exec-2]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 12:49:56.686 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 3608 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 12:49:56.713 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 12:49:57.077 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23348b5d: startup date [Thu Mar 29 12:49:57 CST 2018]; root of context hierarchy
+2018-03-29 12:50:00.315 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c6448a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 12:50:01.037 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 12:50:01.061 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 12:50:01.081 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 12:50:01.081 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 12:50:01.097 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 12:50:01.451 [localhost-startStop-1]    INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-03-29 12:50:01.453 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4376 ms
+2018-03-29 12:50:01.821 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 12:50:01.828 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 12:50:01.829 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 12:50:01.829 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 12:50:01.829 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 12:50:02.304 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 12:50:02.649 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 12:50:02.721 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 12:50:02.733 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 12:50:03.161 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 12:50:03.161 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 12:50:03.297 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 12:50:03.634 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 12:50:04.468 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 12:50:05.821 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23348b5d: startup date [Thu Mar 29 12:49:57 CST 2018]; root of context hierarchy
+2018-03-29 12:50:05.855 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 12:50:05.901 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 12:50:05.901 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 12:50:05.901 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 12:50:05.901 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 12:50:05.901 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 12:50:05.905 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 12:50:05.920 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 12:50:05.963 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 12:50:05.963 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 12:50:06.013 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 12:50:06.523 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 12:50:06.524 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 12:50:06.531 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 12:50:06.547 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 12:50:06.558 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 12:50:06.573 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-03-29 12:50:06.581 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 11.244 seconds (JVM running for 15.563)
+2018-03-29 12:50:49.100 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 12:50:49.100 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 12:50:49.139 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-03-29 12:52:38.320 [http-nio-8080-exec-8]    INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:426)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-03-29 13:27:00.687 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 5556 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 13:27:00.693 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 13:27:01.018 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 13:27:01 CST 2018]; root of context hierarchy
+2018-03-29 13:27:03.390 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11634ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 13:27:04.160 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 13:27:04.186 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 13:27:04.206 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 13:27:04.207 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 13:27:04.214 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 13:27:04.445 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 13:27:04.459 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3441 ms
+2018-03-29 13:27:04.824 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 13:27:04.831 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 13:27:04.832 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 13:27:04.832 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 13:27:04.832 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 13:27:05.250 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 13:27:05.528 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 13:27:05.590 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 13:27:05.602 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 13:27:06.023 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 13:27:06.025 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 13:27:06.084 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 13:27:06.253 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 13:27:06.826 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 13:27:07.975 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 13:27:01 CST 2018]; root of context hierarchy
+2018-03-29 13:27:08.033 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 13:27:08.118 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 13:27:08.118 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 13:27:08.118 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 13:27:08.122 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 13:27:08.122 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 13:27:08.126 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth()
+2018-03-29 13:27:08.133 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 13:27:08.133 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 13:27:08.235 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:27:08.235 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:27:08.285 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:27:08.628 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 13:27:08.632 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 13:27:08.640 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 13:27:08.663 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 13:27:08.681 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 13:27:08.705 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 13:27:08.708 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 9.598 seconds (JVM running for 11.358)
+2018-03-29 13:27:54.561 [http-nio-8080-exec-4]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 13:27:54.561 [http-nio-8080-exec-4]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 13:27:54.597 [http-nio-8080-exec-4]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-03-29 13:27:54.632 [http-nio-8080-exec-4]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:27:54.792 [http-nio-8080-exec-5]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:28:03.199 [http-nio-8080-exec-6]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:29:24.591 [http-nio-8080-exec-8]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:29:35.937 [http-nio-8080-exec-3]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:31:05.095 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 3848 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 13:31:05.101 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 13:31:05.241 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 13:31:05 CST 2018]; root of context hierarchy
+2018-03-29 13:31:07.303 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9be40ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 13:31:07.675 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 13:31:07.692 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 13:31:07.707 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 13:31:07.708 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 13:31:07.713 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 13:31:07.921 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 13:31:07.948 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2707 ms
+2018-03-29 13:31:08.211 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 13:31:08.216 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 13:31:08.216 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 13:31:08.216 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 13:31:08.216 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 13:31:08.404 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 13:31:08.760 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 13:31:08.876 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 13:31:08.899 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 13:31:09.367 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 13:31:09.369 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 13:31:09.415 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 13:31:09.547 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 13:31:10.252 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 13:31:11.520 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 13:31:05 CST 2018]; root of context hierarchy
+2018-03-29 13:31:11.556 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 13:31:11.596 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 13:31:11.597 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 13:31:11.598 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 13:31:11.598 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 13:31:11.599 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 13:31:11.601 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 13:31:11.606 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 13:31:11.606 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 13:31:11.650 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:31:11.650 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:31:11.701 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 13:31:12.136 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 13:31:12.138 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 13:31:12.146 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 13:31:12.163 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 13:31:12.175 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 13:31:12.193 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 13:31:12.195 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 8.654 seconds (JVM running for 10.281)
+2018-03-29 13:31:24.790 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 13:31:24.791 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 13:31:24.816 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-03-29 13:31:24.887 [http-nio-8080-exec-1]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:31:24.888 [http-nio-8080-exec-1]    INFO  c.yuhao.sell.controller.WxController - code=081XYFJb1ovuRt0PHiLb1iFDJb1XYFJG
+2018-03-29 13:31:47.822 [http-nio-8080-exec-2]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:31:47.822 [http-nio-8080-exec-2]    INFO  c.yuhao.sell.controller.WxController - code=081XYFJb1ovuRt0PHiLb1iFDJb1XYFJG
+2018-03-29 13:32:01.273 [http-nio-8080-exec-4]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 13:32:01.273 [http-nio-8080-exec-4]    INFO  c.yuhao.sell.controller.WxController - code=081XYFJb1ovuRt0PHiLb1iFDJb1XYFJG
+2018-03-29 15:32:45.661 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 7568 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 15:32:45.682 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 15:32:45.834 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 15:32:45 CST 2018]; root of context hierarchy
+2018-03-29 15:32:48.285 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11634ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 15:32:48.697 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 15:32:48.713 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 15:32:48.728 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 15:32:48.728 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 15:32:48.728 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 15:32:48.889 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 15:32:48.889 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3055 ms
+2018-03-29 15:32:49.093 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 15:32:49.101 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 15:32:49.101 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 15:32:49.101 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 15:32:49.101 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 15:32:49.352 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 15:32:49.562 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 15:32:49.627 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 15:32:49.639 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 15:32:49.988 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 15:32:49.992 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 15:32:50.035 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 15:32:50.200 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 15:32:50.809 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 15:32:51.774 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Thu Mar 29 15:32:45 CST 2018]; root of context hierarchy
+2018-03-29 15:32:51.839 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 15:32:51.888 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 15:32:51.888 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 15:32:51.888 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 15:32:51.888 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 15:32:51.888 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 15:32:51.892 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 15:32:51.896 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 15:32:51.896 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 15:32:51.935 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 15:32:51.939 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 15:32:51.992 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 15:32:52.400 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 15:32:52.400 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 15:32:52.407 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 15:32:52.423 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 15:32:52.435 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 15:32:52.450 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 15:32:52.454 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 8.567 seconds (JVM running for 10.396)
+2018-03-29 15:33:47.305 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 15:33:47.305 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 15:33:47.342 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-03-29 15:33:47.402 [http-nio-8080-exec-1]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 15:33:47.402 [http-nio-8080-exec-1]    INFO  c.yuhao.sell.controller.WxController - code=071MObk30og9hC1oqSj3031bk30MObkC
+2018-03-29 15:33:49.459 [http-nio-8080-exec-1]    INFO  c.yuhao.sell.controller.WxController - {"access_token":"8_rU4MYMJDb0wmJri09G0x_p8K3B7vIYPrGkx272dxEr3Ei7y7IbvWOJ-n-v1i3XS_tQxo9tlPcdxVj2FoHLRrB-eUGoJ8IE2eRbn8Ctju_HY","expires_in":7200,"refresh_token":"8_SgQLUAGbS1P01Fkg7umqdljxzvlpeHFf0n8FF9y8kjxBen8Qc8JzFL1ZRGHgKHUe8224lomOU9sy-Hf-8TsjkShMVgZJw_0ej94d62jtZPc","openid":"olgUa07TgzfQs_wK6etGjjtAHGTk","scope":"snsapi_base"}
+2018-03-29 15:35:29.798 [http-nio-8080-exec-5]    INFO  c.yuhao.sell.controller.WxController - 进入auth......
+2018-03-29 15:35:29.798 [http-nio-8080-exec-5]    INFO  c.yuhao.sell.controller.WxController - code=021FSDN807l79I13aQN80nhHN80FSDNs
+2018-03-29 15:35:30.133 [http-nio-8080-exec-5]    INFO  c.yuhao.sell.controller.WxController - {"access_token":"8_SgQLUAGbS1P01Fkg7umqdntQSC5DutJfEx0WqTqJBpLk7gRNzclityjcaMgZY8WGgFgpbPwlE2nZkX_qTX4tLWDqOABlKvaPh5C_kKlS5VM","expires_in":7200,"refresh_token":"8_cY4ha-BNa4_VcVN52B8HaFFkYOULz_ycxQzcC8EfYTY9EWCu3BSCvmQskG7CqwpcOqeleDSlBb6uaIoKzYaDWfQVSf7OH273XMHq1Au1mbU","openid":"olgUa07TgzfQs_wK6etGjjtAHGTk","scope":"snsapi_userinfo"}
+2018-03-29 16:25:19.031 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 8952 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 16:25:19.036 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 16:25:19.465 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@117e949d: startup date [Thu Mar 29 16:25:19 CST 2018]; root of context hierarchy
+2018-03-29 16:25:21.929 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e56f7e35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 16:25:22.377 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 16:25:22.393 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:25:22.393 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 16:25:22.393 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 16:25:22.412 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 16:25:22.577 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 16:25:22.577 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3112 ms
+2018-03-29 16:25:22.831 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 16:25:22.831 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 16:25:22.831 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 16:25:22.831 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 16:25:22.831 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 16:25:23.047 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 16:25:23.396 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 16:25:23.460 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:25:23.460 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 16:25:23.955 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 16:25:23.957 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 16:25:24.015 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 16:25:24.178 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 16:25:24.764 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:25:24.779 [main]    WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'weChatAccountConfig': Could not bind properties to 'WeChatAccountConfig' : prefix=weChat, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'weChat' is not valid
+2018-03-29 16:25:24.779 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:25:24.779 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-03-29 16:25:24.801 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-03-29 16:25:24.802 [main]    INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-03-29 16:25:24.848 [main]    INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-03-29 16:28:00.612 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 6308 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 16:28:00.618 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 16:28:00.693 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f2cfcc2: startup date [Thu Mar 29 16:28:00 CST 2018]; root of context hierarchy
+2018-03-29 16:28:03.627 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90b8a914] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 16:28:04.253 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 16:28:04.258 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:28:04.274 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 16:28:04.274 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 16:28:04.289 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 16:28:04.490 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 16:28:04.490 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3797 ms
+2018-03-29 16:28:04.775 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 16:28:04.775 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 16:28:04.775 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 16:28:04.775 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 16:28:04.791 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 16:28:05.059 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 16:28:05.276 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 16:28:05.359 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:28:05.618 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 16:28:05.808 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 16:28:05.812 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 16:28:05.919 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 16:28:06.147 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 16:28:07.038 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:28:07.069 [main]    WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'weChatAccountConfig': Could not bind properties to 'WeChatAccountConfig' : prefix=weChat, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'weChat' is not valid
+2018-03-29 16:28:07.069 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:28:07.073 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-03-29 16:28:07.081 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-03-29 16:28:07.085 [main]    INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-03-29 16:28:07.157 [main]    INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-03-29 16:29:23.698 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 2468 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 16:29:23.705 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 16:29:24.488 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc3ad05: startup date [Thu Mar 29 16:29:24 CST 2018]; root of context hierarchy
+2018-03-29 16:29:27.096 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84943e07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 16:29:27.695 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 16:29:27.713 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:29:27.729 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 16:29:27.729 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 16:29:27.736 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 16:29:27.976 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 16:29:27.976 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3488 ms
+2018-03-29 16:29:28.230 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 16:29:28.246 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 16:29:28.246 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 16:29:28.246 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 16:29:28.246 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 16:29:28.546 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 16:29:28.839 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 16:29:28.931 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:29:29.197 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 16:29:29.374 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 16:29:29.378 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 16:29:29.459 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 16:29:29.710 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 16:29:30.590 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:29:30.635 [main]    WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'weChatAccountConfig': Could not bind properties to 'WeChatAccountConfig' : prefix=weChat, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'weChat' is not valid
+2018-03-29 16:29:30.635 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:29:30.639 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-03-29 16:29:30.647 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-03-29 16:29:30.654 [main]    INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-03-29 16:29:30.678 [main]    INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-03-29 16:31:35.939 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 5892 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 16:31:35.976 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 16:31:36.259 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cf8b2dc: startup date [Thu Mar 29 16:31:36 CST 2018]; root of context hierarchy
+2018-03-29 16:31:38.174 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45542147] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 16:31:38.712 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 16:31:38.734 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:31:38.750 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 16:31:38.750 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 16:31:38.754 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 16:31:38.997 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 16:31:38.997 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2738 ms
+2018-03-29 16:31:39.227 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 16:31:39.238 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 16:31:39.238 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 16:31:39.238 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 16:31:39.238 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 16:31:39.493 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 16:31:39.730 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 16:31:39.804 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:31:40.060 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 16:31:40.230 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 16:31:40.230 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 16:31:40.302 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 16:31:40.518 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 16:31:41.314 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:31:43.231 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cf8b2dc: startup date [Thu Mar 29 16:31:36 CST 2018]; root of context hierarchy
+2018-03-29 16:31:43.290 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 16:31:43.343 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 16:31:43.343 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 16:31:43.347 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 16:31:43.347 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 16:31:43.347 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 16:31:43.351 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weChat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 16:31:43.351 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weChat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 16:31:43.351 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 16:31:43.355 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 16:31:43.355 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 16:31:43.423 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:31:43.423 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:31:43.531 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:31:44.096 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 16:31:44.096 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 16:31:44.108 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 16:31:44.123 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:31:44.139 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 16:31:44.166 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 16:31:44.170 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 10.611 seconds (JVM running for 13.506)
+2018-03-29 16:36:45.744 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 4052 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 16:36:45.751 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 16:36:45.884 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67304a40: startup date [Thu Mar 29 16:36:45 CST 2018]; root of context hierarchy
+2018-03-29 16:36:48.847 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$828f4223] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 16:36:49.359 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 16:36:49.376 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:36:49.391 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 16:36:49.391 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 16:36:49.399 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 16:36:49.607 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 16:36:49.607 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3723 ms
+2018-03-29 16:36:49.890 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 16:36:49.901 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 16:36:49.902 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 16:36:49.902 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 16:36:49.902 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 16:36:50.157 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 16:36:50.400 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 16:36:50.511 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:36:50.829 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 16:36:50.934 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 16:36:50.936 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 16:36:51.003 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 16:36:51.244 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 16:36:52.084 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 16:36:54.205 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67304a40: startup date [Thu Mar 29 16:36:45 CST 2018]; root of context hierarchy
+2018-03-29 16:36:54.265 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 16:36:54.324 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 16:36:54.325 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 16:36:54.326 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 16:36:54.326 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 16:36:54.327 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 16:36:54.328 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weChat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 16:36:54.329 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weChat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 16:36:54.329 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 16:36:54.336 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 16:36:54.337 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 16:36:54.426 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:36:54.426 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:36:54.497 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 16:36:55.148 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 16:36:55.151 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 16:36:55.164 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 16:36:55.181 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 16:36:55.199 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 16:36:55.225 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 16:36:55.229 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 11.632 seconds (JVM running for 13.615)
+2018-03-29 16:37:26.631 [http-nio-8080-exec-3]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 16:37:26.631 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 16:37:26.665 [http-nio-8080-exec-3]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-03-29 16:38:09.254 [http-nio-8080-exec-5]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:38:59.922 [http-nio-8080-exec-9]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:40:36.273 [HikariPool-1 housekeeper]    WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s755ms425µs144ns).
+2018-03-29 16:40:57.322 [http-nio-8080-exec-9]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:40:57.329 [http-nio-8080-exec-8]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:41:50.944 [http-nio-8080-exec-7]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:42:10.289 [http-nio-8080-exec-6]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:42:19.978 [http-nio-8080-exec-5]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:43:11.137 [http-nio-8080-exec-5]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:44:29.375 [http-nio-8080-exec-3]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=www.baidu.com#wechat_redirect
+2018-03-29 16:44:56.161 [http-nio-8080-exec-6]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fwww.baidu.com#wechat_redirect
+2018-03-29 17:55:03.217 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 2704 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 17:55:03.222 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 17:55:03.420 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17a7f733: startup date [Thu Mar 29 17:55:03 CST 2018]; root of context hierarchy
+2018-03-29 17:55:06.732 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fd34788] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 17:55:07.463 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 17:55:07.478 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 17:55:07.490 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 17:55:07.490 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 17:55:07.496 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 17:55:07.745 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 17:55:07.746 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4326 ms
+2018-03-29 17:55:07.937 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 17:55:07.941 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 17:55:07.942 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 17:55:07.943 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 17:55:07.943 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 17:55:08.177 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 17:55:08.374 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 17:55:08.454 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 17:55:08.468 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 17:55:08.918 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 17:55:08.924 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 17:55:09.117 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 17:55:09.351 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 17:55:10.056 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 17:55:11.665 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17a7f733: startup date [Thu Mar 29 17:55:03 CST 2018]; root of context hierarchy
+2018-03-29 17:55:11.704 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 17:55:11.747 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 17:55:11.748 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 17:55:11.749 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 17:55:11.749 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 17:55:11.750 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 17:55:11.751 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 17:55:11.752 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 17:55:11.753 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 17:55:11.757 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 17:55:11.758 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 17:55:11.804 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 17:55:11.804 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 17:55:11.855 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 17:55:12.298 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 17:55:12.299 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 17:55:12.306 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 17:55:12.321 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 17:55:12.336 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 17:55:12.354 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 17:55:12.358 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 10.426 seconds (JVM running for 12.146)
+2018-03-29 17:55:16.674 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 17:55:16.675 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 17:55:16.722 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2018-03-29 17:55:16.775 [http-nio-8080-exec-1]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 17:58:52.703 [http-nio-8080-exec-3]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 17:59:40.078 [http-nio-8080-exec-5]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:00:22.991 [http-nio-8080-exec-7]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:00:37.092 [http-nio-8080-exec-2]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:01:07.764 [http-nio-8080-exec-2]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2FweChat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:02:27.645 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 8584 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 18:02:27.651 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 18:02:28.036 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e96bacf: startup date [Thu Mar 29 18:02:28 CST 2018]; root of context hierarchy
+2018-03-29 18:02:29.946 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2743a70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 18:02:30.327 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 18:02:30.345 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 18:02:30.358 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 18:02:30.358 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 18:02:30.363 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 18:02:30.525 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 18:02:30.525 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2489 ms
+2018-03-29 18:02:30.879 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 18:02:30.898 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 18:02:30.899 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 18:02:30.899 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 18:02:30.899 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 18:02:31.227 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 18:02:31.421 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 18:02:31.520 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 18:02:31.571 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 18:02:31.918 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 18:02:31.919 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 18:02:31.962 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 18:02:32.104 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 18:02:32.675 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 18:02:34.071 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e96bacf: startup date [Thu Mar 29 18:02:28 CST 2018]; root of context hierarchy
+2018-03-29 18:02:34.137 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 18:02:34.177 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 18:02:34.178 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 18:02:34.178 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 18:02:34.179 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 18:02:34.180 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 18:02:34.181 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 18:02:34.182 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 18:02:34.182 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 18:02:34.187 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 18:02:34.188 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 18:02:34.231 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:02:34.231 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:02:34.277 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:02:34.671 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 18:02:34.674 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 18:02:34.683 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 18:02:34.697 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 18:02:34.709 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 18:02:34.727 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 18:02:34.730 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 8.998 seconds (JVM running for 10.729)
+2018-03-29 18:02:44.305 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 18:02:44.305 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 18:02:44.327 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-03-29 18:02:44.362 [http-nio-8080-exec-1]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:08:51.971 [http-nio-8080-exec-1]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.102%2F%23%2F#wechat_redirect
+2018-03-29 18:09:51.674 [http-nio-8080-exec-6]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.102%2F%23%2F#wechat_redirect
+2018-03-29 18:44:30.169 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 11220 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 18:44:30.174 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 18:44:30.233 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@683dbc2c: startup date [Thu Mar 29 18:44:30 CST 2018]; root of context hierarchy
+2018-03-29 18:44:31.897 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14870bc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 18:44:32.686 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 18:44:32.738 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 18:44:32.756 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 18:44:32.757 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 18:44:32.764 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 18:44:33.111 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 18:44:33.112 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2879 ms
+2018-03-29 18:44:33.388 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 18:44:33.413 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 18:44:33.413 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 18:44:33.414 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 18:44:33.414 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 18:44:33.771 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 18:44:34.165 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 18:44:34.357 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 18:44:34.421 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 18:44:35.184 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 18:44:35.189 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 18:44:35.337 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 18:44:35.832 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 18:44:36.656 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 18:44:38.136 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@683dbc2c: startup date [Thu Mar 29 18:44:30 CST 2018]; root of context hierarchy
+2018-03-29 18:44:38.177 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 18:44:38.218 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 18:44:38.219 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 18:44:38.219 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 18:44:38.221 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 18:44:38.221 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 18:44:38.222 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 18:44:38.223 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 18:44:38.223 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 18:44:38.228 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 18:44:38.229 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 18:44:38.272 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:44:38.272 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:44:38.315 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 18:44:38.722 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 18:44:38.726 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 18:44:38.735 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 18:44:38.749 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 18:44:38.761 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 18:44:38.780 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 18:44:38.783 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 9.393 seconds (JVM running for 10.441)
+2018-03-29 18:44:48.486 [http-nio-8080-exec-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 18:44:48.486 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 18:44:48.515 [http-nio-8080-exec-1]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-03-29 18:44:48.556 [http-nio-8080-exec-1]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.102%2F%23%2F#wechat_redirect
+2018-03-29 18:46:04.080 [http-nio-8080-exec-4]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:46:22.995 [http-nio-8080-exec-8]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.100%3A8080%2F%23%2F#wechat_redirect
+2018-03-29 18:48:03.858 [http-nio-8080-exec-5]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:45:28.457 [main]    INFO  com.yuhao.sell.SellApplication - Starting SellApplication on yuhao-pc with PID 5440 (D:\java\IdeaProjects\sell\target\classes started by yuhao in D:\java\IdeaProjects\sell)
+2018-03-29 23:45:28.509 [main]    INFO  com.yuhao.sell.SellApplication - No active profile set, falling back to default profiles: default
+2018-03-29 23:45:28.884 [main]    INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e222612: startup date [Thu Mar 29 23:45:28 CST 2018]; root of context hierarchy
+2018-03-29 23:45:30.289 [main]    INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:45:30.460 [main]    INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e92e98b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 23:45:30.926 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-03-29 23:45:30.964 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-29 23:45:30.980 [main]    INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-03-29 23:45:30.980 [main]    INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-29 23:45:30.985 [localhost-startStop-1]    INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\360\360桌面\360Desktop;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\；C:\Program Files\Java\jdk1.8.0_144\bin;D:\graphviz-2.38\release\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\yuhao\AppData\Local\Pandoc\;.]
+2018-03-29 23:45:31.179 [localhost-startStop-1]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+2018-03-29 23:45:31.193 [localhost-startStop-1]    INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2309 ms
+2018-03-29 23:45:31.374 [localhost-startStop-1]    INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-03-29 23:45:31.379 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 23:45:31.380 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 23:45:31.380 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 23:45:31.380 [localhost-startStop-1]    INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 23:45:31.668 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-03-29 23:45:32.271 [main]    INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-03-29 23:45:32.592 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:45:32.615 [main]    INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:45:32.706 [main]    INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2018-03-29 23:45:32.708 [main]    INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-03-29 23:45:32.886 [main]    INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:45:33.070 [main]    INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:45:33.695 [main]    INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:45:36.175 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e222612: startup date [Thu Mar 29 23:45:28 CST 2018]; root of context hierarchy
+2018-03-29 23:45:36.217 [main]    WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-29 23:45:36.278 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.yuhao.sell.controller.BuyerOrderController.create(com.yuhao.sell.form.OrderForm,org.springframework.validation.BindingResult)
+2018-03-29 23:45:36.279 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<java.util.List<com.yuhao.sell.dto.OrderDTO>> com.yuhao.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-29 23:45:36.279 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-03-29 23:45:36.280 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO<com.yuhao.sell.dto.OrderDTO> com.yuhao.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-03-29 23:45:36.281 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.yuhao.sell.VO.ResultVO com.yuhao.sell.controller.BuyerProductController.list()
+2018-03-29 23:45:36.282 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.notify(java.lang.String)
+2018-03-29 23:45:36.283 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.yuhao.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-03-29 23:45:36.284 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2018-03-29 23:45:36.285 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.yuhao.sell.controller.WeChatController.authorize(java.lang.String)
+2018-03-29 23:45:36.286 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.yuhao.sell.controller.WxController.auth(java.lang.String)
+2018-03-29 23:45:36.295 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:45:36.296 [main]    INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:45:36.355 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:45:36.355 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:45:36.441 [main]    INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:45:36.753 [main]    INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-29 23:45:36.932 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-29 23:45:36.934 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-29 23:45:36.950 [main]    INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-03-29 23:45:37.311 [main]    INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-03-29 23:45:37.345 [main]    INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-29 23:45:37.408 [main]    INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-03-29 23:45:37.415 [main]    INFO  com.yuhao.sell.SellApplication - Started SellApplication in 11.011 seconds (JVM running for 12.828)
+2018-03-29 23:45:44.530 [http-nio-8080-exec-9]    INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 23:45:44.531 [http-nio-8080-exec-9]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 23:45:44.552 [http-nio-8080-exec-9]    INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-29 23:45:44.640 [http-nio-8080-exec-9]    INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:45:44.800 [http-nio-8080-exec-8]    INFO  c.y.sell.controller.WeChatController - https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx04217e27ba2ec8bc&redirect_uri=http%3A%2F%2Fyuhao.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2F192.168.1.102%2F%23%2F#wechat_redirect

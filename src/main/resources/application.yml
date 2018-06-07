@@ -1,0 +1,56 @@
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: MYSQL
+    url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: false
+    hibernate:
+      use-new-id-generator-mappings: false
+  jackson:
+    default-property-inclusion: non_null
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+
+
+server:
+  servlet:
+    context-path: /sell
+  port: 8080
+
+
+wechat:
+  mpAppId: wx04217e27ba2ec8bc
+  mpAppSecret: 3367f43020d819c0fb92453f0961a828
+  mchId: 1500080462
+  mchKey: 6f54166dae87d140e24c6104001a8147
+  keyPath: /home/apiclient_cert.p12
+  notifyUrl: http://wxin.suishouss.com/sell/pay/notify
+  openAppId: 4564
+  openAppSecret: fdgfdg
+  templateId:
+      orderStatus: N3ktkMSkwim1Scbzb4UZGAydDzLYWwxWCZvW5JsaPLU
+
+
+projecturl:
+  wechatMpAuthorize: http://wxin.suishouss.com
+  wechatOpenAuthorize: http://wxin.suishouss.com
+  sell: http://wxin.suishouss.com
+  socket: wxin.suishouss.com
+
+#projecturl:
+#  wechatMpAuthorize: http://yuhao.natapp1.cc
+#  wechatOpenAuthorize: http://yuhao.natapp1.cc
+#  sell: http://yuhao.natapp1.cc
+
+qiniu:
+  ak: -0ZUMHORfo2SicjhTjRheY2jnAlhXBL7hl7LF7uV
+  sk: ZhB2GMbWKMJfcLPpYkzbFtMWPfzONyHd1MRbQtR0
+  domain: p4qg9bqm6.bkt.clouddn.com
+  scheme: http
